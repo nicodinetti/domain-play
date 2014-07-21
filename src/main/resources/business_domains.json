@@ -1,0 +1,157 @@
+{
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).ar(/|:[0-9]+/).*$" : {
+		"countryCode":"AR",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_AR",
+		"default": true
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).bo(/|:[0-9]+/).*$" : {
+		"countryCode":"BO",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_BO",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.decolar.(com|it)(/|:[0-9]+/).*$" : {
+		"countryCode":"BR",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"pt_BR",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar(|.it).cl(/|:[0-9]+/).*$" : {
+		"countryCode":"CL",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_CL",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).co(/|:[0-9]+/).*$" : {
+		"countryCode":"CO",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_CO",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it|co).cr(/|:[0-9]+/).*$" : {
+		"countryCode":"CR",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_CR",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).ec(/|:[0-9]+/).*$" : {
+		"countryCode":"EC",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_EC",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).sv(/|:[0-9]+/).*$" : {
+		"countryCode":"SV",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_SV",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.es.despegar.(com|it)(/|:[0-9]+/).*$" : {
+		"countryCode":"ES",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_ES",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).gt(/|:[0-9]+/).*$" : {
+		"countryCode":"GT",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_GT",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).mx(/|:[0-9]+/).*$" : {
+		"countryCode":"MX",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_MX",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar(|.it).hn(/|:[0-9]+/).*$" : {
+		"countryCode":"HN",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_HN",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).ni(/|:[0-9]+/).*$" : {
+		"countryCode":"NI",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_NI",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).pa(/|:[0-9]+/).*$" : {
+		"countryCode":"PA",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_PA",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).py(/|:[0-9]+/).*$" : {
+		"countryCode":"PY",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_PY",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).pe(/|:[0-9]+/).*$" : {
+		"countryCode":"PE",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_PE",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).pr(/|:[0-9]+/).*$" : {
+		"countryCode":"PR",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_PR",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).do(/|:[0-9]+/).*$" : {
+		"countryCode":"DO",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_DO",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).uy(/|:[0-9]+/).*$" : {
+		"countryCode":"UY",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_UY",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.us.despegar.(com|it)(/|:[0-9]+/).*$" : {
+		"countryCode":"US",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_US",
+		"default": false
+	},
+	"^http://[a-zA-Z0-9]+.despegar.(com|it).ve(/|:[0-9]+/).*$" : {
+		"countryCode":"VE",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_VE",
+		"default": false
+	},
+	"^http://(cars|hotels|flights).uru.despegar.com(/|:[0-9]+/).*$" : {
+		"countryCode":"VE",
+		"brandName":"Despegar",
+		"brandId": 0,
+		"locale":"es_VE",
+		"default": false
+	}
+}
+
