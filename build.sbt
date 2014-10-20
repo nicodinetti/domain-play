@@ -17,7 +17,9 @@ name := "domain-play"
 
 organization := "com.despegar.domain"
 
-crossScalaVersions := Seq("2.10.4", "2.11.1")
+scalaVersion := "2.11.2"
+
+crossScalaVersions := Seq("2.10.4", "2.11.2")
 
 crossVersion := CrossVersion.binary
 
@@ -77,14 +79,14 @@ libraryDependencies ++= Seq(
   // --- Config ---
   "com.typesafe"                  %  "config"                % "1.2.1",
   // --- Core ---
-  "com.despegar.domain"           %% "domain-scala"          % "2.1" ,
+  "com.despegar.domain"           %% "domain-scala"          % "2.1",
   // --- Play ---
-  "com.typesafe.play"             %% "play"                  % "2.3.0"   %  "provided",
-  "com.typesafe.play"             %% "play-json"             % "2.3.0"   %  "provided",
+  "com.typesafe.play"             %% "play"                  % "2.3.4"    %  "provided",
+  "com.typesafe.play"             %% "play-json"             % "2.3.4"    %  "provided",
   // --- Utils ---
   "org.apache.commons"            %  "commons-lang3"         % "3.3.2",
   // --- Testing ---
-  "org.specs2"                    %% "specs2-core"           % "2.3.12"  % "test",
-  "org.specs2"                    %% "specs2-junit"          % "2.3.12"  % "test",
-  "junit"                         %  "junit"                 % "4.11"    % "test"
+  "org.specs2"                    %% "specs2-core"           % "2.4.6"    % "test",
+  "org.specs2"                    %% "specs2-junit"          % "2.4.6"    % "test",
+  "junit"                         %  "junit"                 % "4.11"     % "test"
 )

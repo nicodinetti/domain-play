@@ -5,6 +5,7 @@ import play.api.http._
 import play.api.mvc._
 import play.api.mvc.Results._
 import play.api.libs.json._
+import play.api.libs.functional.syntax._
 import java.util.Locale
 import play.api.libs.json._
 import org.apache.commons.lang3._
@@ -14,17 +15,12 @@ import com.despegar.domain.provider.BusinessDomainProvider
 
 object BusinessDomainFilter extends Filter with BusinessDomainProvider {
 
-  val locationReads = new Reads[Locale] {
-    def reads(value: JsValue) = value match {
-      case JsString(x) => JsSuccess(LocaleUtils.toLocale(x))
-      case x => JsError("Expected Locale as JsString, but got " + x)
-    }
-  }
-  val locationWrites = new Writes[Locale] {
-    def writes(x: Locale) = JsString(x.toString)
-  }
-  implicit val locationFormat: Format[Locale] = Format(locationReads, locationWrites)
-  implicit val BusinessDomainJsonFormat = Json.format[BusinessDomain]
+  implicit lazy val BusinessDomainJsonRead: Reads[BusinessDomain] = (
+    (__ \ "countryCode").read[String]
+    and (__ \ "brandName").read[String]
+    and (__ \ "brandId").read[Int]
+    and (__ \ "locale").read[String].map { x => LocaleUtils.toLocale(x) }
+    and (__ \ "default").read[Boolean])(BusinessDomain.apply _)
 
   val LANGUAGE_QUERY_PARAMETER = "l"
   val X_LANG_COOKIE = "X-Lang"
@@ -55,7 +51,7 @@ object BusinessDomainFilter extends Filter with BusinessDomainProvider {
     def secure = request.secure
   }
 
-  def parseBusinessDomainJsonData(source: String): Map[String, BusinessDomain] = Json.parse(source).as[Map[String, BusinessDomain]]
+  def parseBusinessDomainJsonData(source: String): Map[String, BusinessDomain] = Json.parse(source).as[Map[String, JsValue]].mapValues { _.as[BusinessDomain](BusinessDomainJsonRead) }
 
   def apply(next: (RequestHeader) => Future[Result])(request: RequestHeader): Future[Result] = {
     val uri = (if (request.secure) "https://" else "http://") + request.host + "/"
